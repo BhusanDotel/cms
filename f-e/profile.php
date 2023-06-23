@@ -89,16 +89,18 @@ $note = $obj_admin->display('swastik_notes','note_id');
             border-radius: 50%;
         }
         input[type=file]{
-            width: 86px;
+            width: 97px;
             padding: 0px;
             font-size: small;
-            padding: 3px 20px;
+            padding: 3px 6.5px;
             border: none;
-
+            background:lightgrey;
         }
+
         #hidden{
             display: none;
         }
+
     </style>
 </head>
 
