@@ -35,12 +35,14 @@ if(isset($_POST['submit-register'])){
 
 </head>
 
-<body>
+<body class="scrollable">
     <div class="bg-img"></div>
 
     <div class="container">
         <div class="fixed">
-            <div class="header">
+
+
+            <div class="header" >
 
                 <div class="logo-section">
                     <img src="../img/swastik-logo-red.png">
@@ -118,7 +120,7 @@ if(isset($_POST['submit-register'])){
                         <a class="error"><?php echo $info; ?></a>
               <?php } ?>
 
-                        <input type="submit" id="submit" name="submit-register"  value="Sign Up">
+                        <input  type="submit" id="submit" name="submit-register"  value="Sign Up">
 
                     </form>
                     <div class="form-bottom">

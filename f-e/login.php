@@ -27,6 +27,8 @@ if(isset($_POST['submit-login'])){
     <link rel="stylesheet" href="../style/style-public-form.css">
 
 
+
+
 </head>
 
 <body>
@@ -34,6 +36,14 @@ if(isset($_POST['submit-login'])){
 
     <div class="container">
         <div class="fixed">
+
+            <div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+             </div>
+
+
             <div class="header">
 
                 <div class="logo-section">
@@ -79,7 +89,7 @@ if(isset($_POST['submit-login'])){
     
                 <div class="form-bottom">
                     <span class="form-bottom left"><a href="contact.php">Forgot Password?</a></span>
-                    <span class="form-bottom right"><a href="register.php" id="register" >New Here?</a></span>
+                    <span class="form-bottom right"><a href="register.php" id="register" ><span class="newhere">New Here?</span></a></span>
                 </div>
             </form>
         </div>

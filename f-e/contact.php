@@ -31,6 +31,13 @@
 
     <div class="container">
         <div class="fixed">
+
+            <div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+             </div>
+
             <div class="header">
 
                 <div class="logo-section">
