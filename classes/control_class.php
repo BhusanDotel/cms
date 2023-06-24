@@ -120,7 +120,7 @@ class control_class
 			}else{
 			$host =$_SERVER['HTTP_HOST'];
 			$secret = bin2hex(random_bytes(20));
-			$mail->Body = "<p>Hi ".$user_fullname.",</p><br><p>Please click the button below to verify your email address.</p><br><a style='text-decoration:none;color: white;padding:5px;background-color:green;border-radius:4px' href='http://".$host."/swastik/f-e/verification.php?secret=".$secret."'>Verify Email Address </a><br><br>Clicking not working? Try pasting this link into your browser: <br> http://".$host."/swastik/f-e/verification.php?secret=".$secret."<br><br><p>If you did not create an account, no further action is required.</p>";
+			$mail->Body = "<p>Hi ".$user_fullname.",</p><br><p>Please click the button below to verify your email address.</p><br><a style='text-decoration:none;color: white;padding:5px;background-color:#4B0076;border-radius:4px' href='http://".$host."/swastik/f-e/verification.php?secret=".$secret."'>Verify Email Address </a><br><br>Clicking not working? Try pasting this link into your browser: <br> http://".$host."/swastik/f-e/verification.php?secret=".$secret."<br><br><p>If you did not create an account, no further action is required.</p>";
 			$mail->addAddress($user_email);
 			if ( $mail->send() ) {
 
@@ -203,7 +203,7 @@ return $emailErr;
           if($stmt->rowCount() > 0)
           {
           	if($userRow['isactive']!=1){
-          		$message = "	<p style='color:black; font-size:15px'>Sorry. Your account is deactivated. If you think you should be able to login, <a  style='color:green' href='contact.php'>contact here.</a></p> ";
+          		$message = "	<p style='color:black; font-size:15px'>Sorry. Your account is deactivated. If you think you should be able to login, <a  style='color:#4B0076; text-decoration:underlined' href='contact.php'>contact here.</a></p> ";
           	}
           	else{
           		session_start();
@@ -275,7 +275,7 @@ return $emailErr;
 			$upload_notice->bindparam(':c', $_SESSION['user_id']);
 			$upload_notice->execute();
 			
-			$message = "<p style='color:green;'>Posted.</p>";
+			$message = "<p style='color:black;'>Posted ✔️</p>";
 			
 			
 		}
@@ -341,7 +341,7 @@ return $emailErr;
 			$post_assi->bindparam(':g', $assi_semester);
 			$post_assi->bindparam(':h', $_SESSION['user_id']);
 			$post_assi->execute();
-			$message = "<p style='color:green;'>Assignment posted successfully.</p>";
+			$message = "<p style='color:black;'>Assignment posted successfully ✔️</p>";
 		}
 		catch(PDOException $exception){
 			echo $exception;
@@ -360,7 +360,7 @@ return $emailErr;
 				$post_assi->bindparam(':g', $assi_semester);
 				$post_assi->bindparam(':h', $_SESSION['user_id']);
 				$post_assi->execute();
-				$message = "<p style='color:green;'>Posted.</p>";
+				$message = "<p style='color:black;'>Posted ✔️</p>";
 			}
 			catch(PDOException $exception){
 				echo $exception->getMessage();
@@ -418,7 +418,7 @@ return $emailErr;
 			$upload_note->bindparam(':f', $_SESSION['user_id']);
 
 			if($upload_note->execute()){
-			$message = "<p style='color:green;'>File Uploaded Successfully.</p>";
+			$message = "<p style='color:black;'>File Uploaded Successfully ✔️</p>";
 		}
 		else{
 			$message = "<p style='color:red;'>Something went wrong.</p>";
@@ -579,7 +579,7 @@ public function open_assi($data){
 			$post_feedback->bindparam(':b', $feedback_by);
 			$post_feedback->execute();
 			
-			$message = "<p style='color:green;'>Thanks for your feedback!</p>";
+			$message = "<p style='color:black;'>Thanks for your feedback!</p>";
 			
 			
 		}
@@ -609,7 +609,7 @@ public function post_resource($data){
 			$post_resource->bindparam(':a', $resource_title);
 			$post_resource->bindparam(':b', $resource_link);
 			$post_resource->execute();
-			$message = "<p style='color:green;'>Posted.</p>";
+			$message = "<p style='color:black;'>Posted ✔️</p>";
 		}
 		catch(PDOException $exception){
 			echo "Sorry, Internal Server Error.";
@@ -736,7 +736,7 @@ public function verifyUser($id){
 } catch(PDOException $e){
 	echo $e->getMessage;
 }
-$mail->Body = "<h2>Account Verified</h2><br><p>Hi ".$r['user_fullname'].",</p><br><p>Your Account has been verified. Go to your browser or click the button below to login.</p><br><a style='text-decoration:none;color: white;padding:5px;background-color:green;border-radius:4px' href='http://cms-swastik.rf.gd/swastik/f-e/login.php'>Click Here</a><br><br><br>Regards,<br>cms-swastik";
+$mail->Body = "<h2>Account Verified</h2><br><p>Hi ".$r['user_fullname'].",</p><br><p>Your Account has been verified. Go to your browser or click the button below to login.</p><br><a style='text-decoration:none;color: white;padding:5px;background-color:#4B0076; border-radius:4px' href='http://cms-swastik.rf.gd/swastik/f-e/login.php'>Click Here</a><br><br><br>Regards,<br>cms-swastik";
 				$mail->addAddress($r['user_email']);
 				if ( $mail->send() ) {
 			try{
@@ -973,7 +973,7 @@ public function post_questions($data){
 			$upload_q->bindparam(':c', $_SESSION['user_id']);
 			$upload_q->execute();
 			
-			$message = "<p style='color:green;'>Posted.</p>";			
+			$message = "<p style='color:black;'>Posted ✔️</p>";			
 			
 		}
 		catch(PDOException $exception){
@@ -1001,7 +1001,7 @@ public function post_replies($data, $c){
 			$upload_r->bindparam(':c', $c);
 			$upload_r->execute();
 			
-			$message = "<p style='color:green;'>Posted.</p>";			
+			$message = "<p style='color:black;'>Posted ✔️</p>";			
 			
 		}
 		catch(PDOException $exception){
@@ -1052,7 +1052,7 @@ public function post_replies($data, $c){
 		// die($sql);
 		$stmt = $this->db->prepare($sql);
 		if($stmt->execute()){
-			return "<p style='color:green' >Posted. </p>";
+			return "<p style='color:black' >Posted ✔️</p>";
 		}else{
 			return "<p style='color:red' >Not Posted. </p>";
 		}

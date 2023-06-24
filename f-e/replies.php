@@ -32,16 +32,18 @@ $resources = $obj_admin->display('swastik_resources','resource_id');
     <style type="text/css">
 
 .container1,.post-assignment {
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
+  border:none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  background:transparent;
   border-radius: 5px;
   padding: 10px;
   margin: 10px 0;
 }
 
 .darker {
-  border-color: #ccc;
-  background-color: #ddd;
+  border:none;
+  background:transparent;
+  box-shadow:0 0 10px rgba(0,0,0,0.9);
 }
 
 </style>

@@ -463,7 +463,7 @@ object-fit: cover;
 
 .time-left {
   float: left;
-  color: #999;
+  color: #000;
   margin-top: 10px;
 
 }
@@ -549,7 +549,7 @@ a{
    
 
     .left-div li a.active {
-        background-color: #04aa6d;
+        background-color: #000000;
         color: white;
         border-radius: 10px;
     }
@@ -934,10 +934,18 @@ input[type=submit]{
     .post-assignment input[type=submit]{
         width: 80px;
         height: 28px;
-        background-color: #04aa6d;
+        background-color: #000000;
         border: none;
         color: white;
         border-radius: 3px;
+    }
+
+    .post-assignment input[type=submit]:hover{
+        background-color: #383737;
+    }
+
+    .post-assignment input[type=submit]:active{
+        transform: scale(0.8);
     }
 
 
@@ -1075,9 +1083,10 @@ a{
    
 
     .left-div li a.active {
-        background-color: #04aa6d;
+        background-color: #000000;
         color: white;
         border-radius: 10px;
+        transform: scale(1);
     }
 
     .left-div li a:hover:not(.active) {
