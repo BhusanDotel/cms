@@ -465,8 +465,8 @@ object-fit: cover;
   float: left;
   color: #000;
   margin-top: 10px;
-
 }
+
 .replies{
     float: left;
     color: #999;
@@ -862,6 +862,8 @@ input[type=submit]{
     resize: none;
     padding: 5px;
     box-sizing: border-box;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     
     }
 
@@ -872,12 +874,21 @@ input[type=submit]{
     .feedback-section input[type=submit]{
         width: 100px;
         height: 30px;
-        border-radius: 3px;
-        background-color: #04aa6d;
+        border-radius: 10px;
+        background-color: #000000;
         color: white;
         border: none;
         cursor: pointer;
         box-sizing: border-box;
+    }
+
+    .feedback-section input[type=submit]:hover{
+        cursor: pointer;
+        background-color: #252525;
+    }
+
+    .feedback-section input[type=submit]:active{
+        transform: scale(0.9);
     }
 
 /* --------------Teacher's Section----------------------- */
@@ -989,6 +1000,7 @@ object-fit: cover;
 }
 
 .time-right {
+    font-size: 12px;
   float: right;
   color: #000000;
   margin-top: 10px;
@@ -996,8 +1008,9 @@ object-fit: cover;
 }
 
 .time-left {
+  font-size: 12px;
   float: left;
-  color: #999;
+  color: #020202;
   margin-top: 10px;
 
 }

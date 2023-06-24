@@ -95,7 +95,7 @@ $count = $obj_admin->count("swastik_replies","r_to",$questions[$i]['q_id'])
     }else{
         echo $user_info['user_fullname'];
   } ?></b> : <?php echo $questions[$i]['q_content'] ?></p>
-  <span class="time-right" ><a style="color:#3701ce;" href="replies.php?q=<?php echo $questions[$i]['q_id'];?>"><?php echo $count ?> Replies</i>
+  <span class="time-right" ><a style="color:#3701ce; font-size:16px;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';" href="replies.php?q=<?php echo $questions[$i]['q_id'];?>"><?php echo $count ?> Replies</i>
 </a> |
 
     <?php if($questions[$i]['q_by']==$_SESSION['user_id']){ ?>
