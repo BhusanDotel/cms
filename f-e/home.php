@@ -25,9 +25,9 @@ $resources = $obj_admin->display('swastik_resources','resource_id');
     <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
     <style type="text/css">
 .container1,.post-assignment {
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
-  border-radius: 5px;
+    border:none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  background: transparent;;
   padding: 10px;
   margin: 10px 0;
 }
@@ -95,13 +95,13 @@ $count = $obj_admin->count("swastik_replies","r_to",$questions[$i]['q_id'])
     }else{
         echo $user_info['user_fullname'];
   } ?></b> : <?php echo $questions[$i]['q_content'] ?></p>
-  <span class="time-right" ><a style="color:#719523" href="replies.php?q=<?php echo $questions[$i]['q_id'];?>"><?php echo $count ?> Replies</i>
+  <span class="time-right" ><a style="color:#3701ce;" href="replies.php?q=<?php echo $questions[$i]['q_id'];?>"><?php echo $count ?> Replies</i>
 </a> |
 
     <?php if($questions[$i]['q_by']==$_SESSION['user_id']){ ?>
     
        
-        <a onclick="return confirm('Are you sure to delete?')"  href="manage/delete.php?a=swastik_questions&b=q_id&c=<?php echo $questions[$i]['q_id'] ?>" class="right"><i style="color: #a6414a;" class="fa fa-trash" aria-hidden="true"></i> | </a>
+        <a onclick="return confirm('Are you sure to delete?')"  href="manage/delete.php?a=swastik_questions&b=q_id&c=<?php echo $questions[$i]['q_id'] ?>" class="right"><i style="color: #ee0d21;" class="fa fa-trash" aria-hidden="true"></i> | </a>
    
    
   <?php } ?> 

@@ -24,12 +24,13 @@ $resources = $obj_admin->display('swastik_resources','resource_id');
     <link rel="stylesheet" href="../style/style-d.css">
     <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
     <style type="text/css">
+
         .container1 {
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin: 10px 0;
+    border:none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  background: transparent;;
+  padding: 10px;
+  margin: 10px 0;;
 }
 
 .darker {

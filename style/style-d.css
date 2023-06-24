@@ -419,10 +419,9 @@ input[type=submit]{
 
 
 .container1 {
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  
+  border:none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  background: transparent;
   padding: 12px 6px;
   margin: 10px 0;
 }
@@ -457,7 +456,7 @@ object-fit: cover;
 
 .time-right {
   float: right;
-  color: #aaa;
+  color: #000000;
   margin-top: 10px;
 
 }
@@ -944,8 +943,9 @@ input[type=submit]{
 
 
 .container1 {
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  background:transparent;
   border-radius: 5px;
   
   padding: 12px 6px;
@@ -982,7 +982,7 @@ object-fit: cover;
 
 .time-right {
   float: right;
-  color: #aaa;
+  color: #000000;
   margin-top: 10px;
 
 }
