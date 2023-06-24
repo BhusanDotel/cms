@@ -66,7 +66,7 @@ if(isset($_POST['post'])){
                     <div class="feedback-content">
                         <form method="post">
                         <label for="feedback">Feedback</label>
-                        <textarea name="feedback"></textarea>
+                        <textarea placeholder="Enter your feedback here!" name="feedback" ></textarea>
                         <input type="checkbox" name="anonymous" value="1">
                         <label>Submit anonymously</label>
                         <div class="message"><?php echo $post ?></div>
