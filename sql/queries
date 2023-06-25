@@ -86,7 +86,7 @@ PRIMARY KEY(feedback_id)
 );
 
 
-CREATE TABLE swastik_resourses(
+CREATE TABLE swastik_resources(
 resource_id int NOT NULL AUTO_INCREMENT,
 resource_title varchar(100) NOT NULL,
 resource_link varchar(400) NOT NULL,

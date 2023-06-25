@@ -17,7 +17,7 @@
     }
     
     input:focus {
-    outline: 1px solid green;
+    outline: 1px solid rgb(0, 0, 0);
     
     }
     
@@ -33,9 +33,9 @@
     }
     
     input[type=submit]:hover {
-        box-shadow: 0 0 50px rgb(255, 253, 253); 
+        box-shadow: 0 0 30px rgb(255, 253, 253); 
         /* or */
-        background-color: rgba(0, 0, 0, 0.692); 
+        background-color: rgba(0, 0, 0, 0.877); 
     }
 
     input[type=submit]:active {

@@ -353,7 +353,7 @@ if(isset($_POST['open'])){
                 </form>
                 <?php } ?>
                        
-                        <div class="submission-date">Due Date: <span style="color:green"><b><?php echo $assi['assi_due_date']; ?></b> ( <?php
+                        <div class="submission-date">Due Date: <span style="color:black"><b><?php echo $assi['assi_due_date']; ?></b> ( <?php
                             
                         $time = $obj_admin->time_left($assi['assi_due_date']);
                         

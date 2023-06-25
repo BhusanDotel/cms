@@ -826,9 +826,11 @@ textarea, input{
     padding: 8px 6px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     border-radius: 8px;
     box-sizing: border-box;
+    background: transparent;
     
 }
 input[type=submit]{
@@ -901,7 +903,8 @@ input[type=submit]{
 
 
 .notes-section input, .assignment-section input{
-    color: #04aa6d;
+    color: #ffffff;
+    background-color: black;
     border: 0.1px solid #595959;
     width: 30%;
     padding: 6px;
@@ -912,14 +915,14 @@ input[type=submit]{
     
 }
 .notes-section input:hover, .assignment-section input:hover{
-    background-color: #04aa6d;
+    background-color: #3d3d3d;
     color: white;
     border: none;
 
 }
 
     .post-assignment{
-        border-bottom: 1px solid #04aa6d;
+        border-bottom: 1px solid #000000;
         padding: 10px 20px;
         margin-bottom: 12px;
       
@@ -932,11 +935,15 @@ input[type=submit]{
 
     .post-assignment input,.post-assignment textarea{
         display: block;
+        height: 35px;
         width: 100%;
         padding: 3px;
         margin:  7px 0;
+        border:none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
         
     }
+
     .post-assignment label{
         margin:  15px 0;
        
@@ -1143,7 +1150,12 @@ a{
 
 .resource-content a{
     text-decoration: none;
+    color: rgb(114, 4, 114);
     
+}
+
+.resource-content a:hover{
+    text-decoration: underline;
 }
 
 .resource-content li{

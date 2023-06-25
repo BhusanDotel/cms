@@ -70,17 +70,18 @@ $note = $obj_admin->display('swastik_notes','note_id');
         input[type=submit]{
              font-size: small;
              color: white;
-             background-color: #04aa6d;
+             background-color:black;
              border: none;
              padding: 6px;
+        }
+        input[type=submit]:hover{
+             background-color:#363636;
         }
         .image{
             float: right; 
             margin-right: 30px;
             display: block;
             align-items: center;
-
-
         }
         .user-info img{
             height: 100px;
@@ -100,6 +101,7 @@ $note = $obj_admin->display('swastik_notes','note_id');
         #hidden{
             display: none;
         }
+
 
     </style>
 </head>
