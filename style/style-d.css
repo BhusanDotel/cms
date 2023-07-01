@@ -935,7 +935,7 @@ input[type=submit]{
 
     .post-assignment input,.post-assignment textarea{
         display: block;
-        height: 35px;
+        height: 105px;
         width: 100%;
         padding: 3px;
         margin:  7px 0;

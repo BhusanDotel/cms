@@ -129,7 +129,7 @@ $count = $obj_admin->count("swastik_replies","r_to",$questions[$i]['q_id'])
             <div class="resource-content">
                 <ul>
                     <?php foreach($resources as $r){ ?>
-                    <li><a href="<?php echo $r['resource_link'] ?>">🔰<?php echo $r['resource_title'] ?></a></li>
+                    <li><a target="_blank" href="<?php echo $r['resource_link'] ?>">🔰<?php echo $r['resource_title'] ?></a></li>
                     <?php } ?>                
                 </ul>
             </div>
